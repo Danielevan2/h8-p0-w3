@@ -1,10 +1,10 @@
 function dataHandling2(x){
   
-    var satu = x.splice(0,4) ;
-    satu.push('Pria', 'SMA Internasional Metro') ;
-    console.log(satu) ;
+    x.splice(1,2,'Roman Alamsyah Elsharawy' , 'Provinsi Bandar Lampung') ;
+    x.push('Pria', 'SMA Internasional Metro') ;
+    console.log(x) ;
     
-    var dua = satu[3] ;
+    var dua = x[3] ;
     var tiga = dua.split('/') ;
     var bulan = parseFloat(tiga[1]) ;
     
@@ -45,7 +45,7 @@ function dataHandling2(x){
       return b -a 
     })) ;
     
-    var name = satu[1] ;
+    var name = x[1] ;
     
     
     return name.slice(0,15) ;
